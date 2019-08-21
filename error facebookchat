@@ -1,0 +1,66 @@
+
+Please help to resolv this error.
+My Script: 
+
+
+from fbchat import Client
+from fbchat.models import*
+
+# read username & password from txt.
+username = str(open('user.txt').read())
+password = str(open('pass.txt').read())
+print(username)
+print(password)
+
+#Login
+client = Client(username,password)
+
+PYthon 3.7
+fbchat 1.7.3
+
+Start file python.
+
+"C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\python.exe" C:/Python/FacebookChat/Facebookchat/facebookchat.py
+Logging in hoanglinh260992@gmail.com...
+hoanglinh260992@gmail.com
+passworkd
+Attempt #1 failed, retrying
+Traceback (most recent call last):
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_client.py", line 258, in login
+    user_agent=user_agent,
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_state.py", line 145, in login
+    "(Failed on url: {})".format(r.url)
+fbchat._exception.FBchatUserError: Login failed. Check email/password. (Failed on url: https://m.facebook.com/checkpoint/?_rdr)
+Attempt #2 failed, retrying
+Traceback (most recent call last):
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_client.py", line 258, in login
+    user_agent=user_agent,
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_state.py", line 145, in login
+    "(Failed on url: {})".format(r.url)
+fbchat._exception.FBchatUserError: Login failed. Check email/password. (Failed on url: https://m.facebook.com/checkpoint/?_rdr)
+Attempt #3 failed, retrying
+Traceback (most recent call last):
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_client.py", line 258, in login
+    user_agent=user_agent,
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_state.py", line 145, in login
+    "(Failed on url: {})".format(r.url)
+fbchat._exception.FBchatUserError: Login failed. Check email/password. (Failed on url: https://m.facebook.com/checkpoint/?_rdr)
+Attempt #4 failed, retrying
+Traceback (most recent call last):
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_client.py", line 258, in login
+    user_agent=user_agent,
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_state.py", line 145, in login
+    "(Failed on url: {})".format(r.url)
+fbchat._exception.FBchatUserError: Login failed. Check email/password. (Failed on url: https://m.facebook.com/checkpoint/?_rdr)
+Traceback (most recent call last):
+  File "C:/Python/FacebookChat/Facebookchat/facebookchat.py", line 13, in <module>
+    client = Client(username,password)
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_client.py", line 99, in __init__
+    self.login(email, password, max_tries, user_agent=user_agent)
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_client.py", line 258, in login
+    user_agent=user_agent,
+  File "C:\Users\Linh Ngo Hoang\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fbchat\_state.py", line 145, in login
+    "(Failed on url: {})".format(r.url)
+fbchat._exception.FBchatUserError: Login failed. Check email/password. (Failed on url: https://m.facebook.com/checkpoint/?_rdr)
+
+Process finished with exit code 1
